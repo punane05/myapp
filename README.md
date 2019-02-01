@@ -32,33 +32,22 @@ A step by step series of examples that tell you how to get a development up and 
 
 Cloning git repo:
 
-git clone https://github.com/IlonaKolo/martin-events-client
+    git clone https://github.com/punane05/myapp
 
 Opening repo folder:
 
-cd martin-events-client
+    cd martin-events-client
 
 Run command:
 
-bundle install
+    bundle install
 
-Migrate database(s):
-
-rake db:migrate
-
-Import seed data:
-
-rake db:seed
-
-Run command:
-
-bundle install
 
 Create secret.env into root folder and include:
 
-export SENDGRID_API_KEY='YOUR KEY'
-export RECAPTCHA_SITE_KEY='YOUR KEY'
-export RECAPTCHA_SECRET_KEY='YOUR KEY'
+    export SENDGRID_API_KEY='YOUR KEY'
+    export RECAPTCHA_SITE_KEY='YOUR KEY'
+    export RECAPTCHA_SECRET_KEY='YOUR KEY'
 
 How to get your Sendgrid API key:
 
@@ -73,10 +62,10 @@ Replace YOUR KEY with the generated API keys in secret.env
 
 Run command:
 
-source secret.env
+    source secret.env
 
 Start rails server by running:
 
-rails s
+    rails s
 
 Open your file on localhost;
