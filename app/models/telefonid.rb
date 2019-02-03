@@ -1,0 +1,2 @@
+class Telefonid < ApplicationRecord
+end

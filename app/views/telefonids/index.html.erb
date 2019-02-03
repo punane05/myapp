@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Telefonids</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nimi</th>
+      <th>Kirjeldus</th>
+      <th>Sisemalu</th>
+      <th>Muutmalu</th>
+      <th>Protsessor</th>
+      <th>Protsessori kiirus</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @telefonids.each do |telefonid| %>
+      <tr>
+        <td><%= telefonid.Nimi %></td>
+        <td><%= telefonid.kirjeldus %></td>
+        <td><%= telefonid.Sisemalu %></td>
+        <td><%= telefonid.Muutmalu %></td>
+        <td><%= telefonid.Protsessor %></td>
+        <td><%= telefonid.Protsessori_kiirus %></td>
+        <td><%= link_to 'Show', telefonid %></td>
+        <td><%= link_to 'Edit', edit_telefonid_path(telefonid) %></td>
+        <td><%= link_to 'Destroy', telefonid, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Telefonid', new_telefonid_path %>

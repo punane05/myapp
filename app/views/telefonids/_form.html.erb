@@ -1,0 +1,47 @@
+<%= form_with(model: telefonid, local: true) do |form| %>
+  <% if telefonid.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(telefonid.errors.count, "error") %> prohibited this telefonid from being saved:</h2>
+
+      <ul>
+      <% telefonid.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Nimi %>
+    <%= form.text_field :Nimi %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kirjeldus %>
+    <%= form.text_area :kirjeldus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Sisemalu %>
+    <%= form.text_field :Sisemalu %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Muutmalu %>
+    <%= form.text_field :Muutmalu %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Protsessor %>
+    <%= form.text_field :Protsessor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Protsessori_kiirus %>
+    <%= form.text_field :Protsessori_kiirus %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

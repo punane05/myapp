@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nimi:</strong>
+  <%= @telefonid.Nimi %>
+</p>
+
+<p>
+  <strong>Kirjeldus:</strong>
+  <%= @telefonid.kirjeldus %>
+</p>
+
+<p>
+  <strong>Sisemalu:</strong>
+  <%= @telefonid.Sisemalu %>
+</p>
+
+<p>
+  <strong>Muutmalu:</strong>
+  <%= @telefonid.Muutmalu %>
+</p>
+
+<p>
+  <strong>Protsessor:</strong>
+  <%= @telefonid.Protsessor %>
+</p>
+
+<p>
+  <strong>Protsessori kiirus:</strong>
+  <%= @telefonid.Protsessori_kiirus %>
+</p>
+
+<%= link_to 'Edit', edit_telefonid_path(@telefonid) %> |
+<%= link_to 'Back', telefonids_path %>
